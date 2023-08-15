@@ -13,7 +13,7 @@ import db from "./database/mongoConfig.js"
 db.connect()
 
 import userRouter from "./routes/userRoutes.js";
-app.use("/user", userRouter)
+app.use("/create", userRouter)
 
 import productRoutes from "./routes/productRoutes.js";
 app.use("/product", productRoutes)

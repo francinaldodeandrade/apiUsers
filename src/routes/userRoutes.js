@@ -4,7 +4,7 @@ const router = express.Router()
 import userControllers from "../controllers/userControllers.js";
 import authControllers from "../controllers/authControllers.js";
 
-router.post("/create", userControllers.createUser)
+router.post("/user", userControllers.createUser)
 router.post("/login", authControllers.login)
 
 router.get("/getAll", userControllers.getAll)
