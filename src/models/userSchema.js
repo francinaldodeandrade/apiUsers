@@ -7,19 +7,14 @@ const userSchema = new Schema(
             type: String,
             required: true
         },
-        lastName: {
-            type: String,
-            required: true
-        },
         cpf: {
             type: String,
             required: true,
             unique: true
         },
-        email: {
+        lastName: {
             type: String,
-            required: true,
-            unique: true
+            required: true
         },
         zipcode: {
             type: String,
@@ -28,7 +23,7 @@ const userSchema = new Schema(
         street: {
             type: String,
             required: true,
-        },
+        },       
         number: {
             type: String,
             required: true,
@@ -39,6 +34,11 @@ const userSchema = new Schema(
         neighborhood: {
             type: String,
             required: true,
+        },
+        email: {
+            type: String,
+            required: true,
+            unique: true
         },
         password: {
             type: String,

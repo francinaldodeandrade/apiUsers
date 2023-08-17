@@ -4,12 +4,12 @@ const router = express.Router()
 import userControllers from "../controllers/userControllers.js";
 import authControllers from "../controllers/authControllers.js";
 
-router.post("/user", userControllers.createUser)
-router.post("/login", authControllers.login)
-
-router.get("/getAll", userControllers.getAll)
 router.get("/getById/:id", userControllers.getById)
+router.get("/getUsers", userControllers.getAll)
+router.post("/createUser", userControllers.createUser)
 router.put("/updateById/:id", userControllers.updateById)
 router.delete("/removeById/:id", userControllers.removeById)
+
+router.post("/login", authControllers.login)
 
 export default router
