@@ -19,4 +19,6 @@ import productRoutes from "./routes/productRoutes.js";
 app.use("/product", productRoutes)
 
 
+
+
 export default app
